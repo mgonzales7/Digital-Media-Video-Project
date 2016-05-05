@@ -1,5 +1,15 @@
 <head>
+
+	<link rel="stylesheet" type="text/css" href="skin.css"> </link>
+	<script src="jwplayer-7.3.6/jwplayer.js"></script>
+	<script>jwplayer.key="eXOYv70vSU6d2dciCKOoDCFCMZxmaaLNnqBl"</script>
 </head>
 <body>
-	<script src="//content.jwplatform.com/players/21IqGyBC-E9AVObYz.js"></script>
+	<div id="myElement"></div>
+	<script type="text/JavaScript">
+	var playerInstance = jwplayer("myElement");
+	playerInstance.setup({
+	    file: "http://content.jwplatform.com/videos/21IqGyBC-ug4Jp07u.mp4"
+	});
+	</script>
 </body>
