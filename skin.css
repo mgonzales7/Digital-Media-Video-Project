@@ -13,3 +13,7 @@ body{
 	
 	color: #9a94eb;
 }
+
+.jwplayer .jw-skin-myskin .jw-button-color {
+	color: red;
+}
