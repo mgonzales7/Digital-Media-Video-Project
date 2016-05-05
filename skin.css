@@ -116,19 +116,21 @@ active configuration in the skin block.*/
 
 /* Color for when HD/CD icons are toggled on. */
 .jw-skin-mkgo .jw-toggle {
-  color: #ff0046;
+  color: black;
 }
 
 /* Color for when HD/CD icons are toggled off. */
 .jw-skin-mkgo .jw-toggle.jw-off {
-  color: #ffffff;
+  color: grey;
+}
+.jw-skin-mkgo .jw-text-elapsed {
+	color: black;
 }
 
 /* Sets spacing between controlbar icons and text */
 .jw-skin-mkgo .jw-controlbar .jw-icon:before,
 .jw-skin-mkgo .jw-text-elapsed,
 .jw-skin-mkgo .jw-text-duration {
-	color: black;
     padding: 0 .7em;
 }
 
@@ -164,7 +166,7 @@ active configuration in the skin block.*/
 
 /* Color of the display icon */
 .jw-skin-mkgo .jw-icon-display {
-  color: black;
+  //color: black;
 }
 
 /* Centers the display icon in it's container */
@@ -274,8 +276,9 @@ active configuration in the skin block.*/
 
 /*This sets the font color and background color for the active item in HD and CC menus. */
 .jw-skin-mkgo .jw-icon-tooltip .jw-active-option {
-    background-color: #ff0046;
-    color: #fff
+
+    background-color: black;
+    color: black;
 }
 
 /* Sets a min width for the volume container so that when it changes between mute and volume, the controlbar does not shift. */
@@ -288,6 +291,7 @@ active configuration in the skin block.*/
 .jw-skin-mkgo .jw-menu,
 .jw-skin-mkgo .jw-volume-tip,
 .jw-skin-mkgo .jw-skip {
+	color: black;
     border: 1px solid #333
 }
 
@@ -295,6 +299,13 @@ active configuration in the skin block.*/
 .jw-skin-mkgo .jw-time-tip {
     padding: .2em;
     bottom: 1.3em
+}
+
+.jw-skin-mkgo .jw-icon-cc {
+	color: black;
+}
+.jw-skin-mkgo .jw-icon-cc .jw-toggle{
+	color: black;
 }
 
 /* Sets the position for the vertical volume slider. */
