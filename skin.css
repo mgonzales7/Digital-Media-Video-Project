@@ -1,6 +1,14 @@
 body{
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) no-repeat center center fixed;
 }
+.text{
+	color: white;
+	text-align: center;
+}
+.share{
+	text-align: center;
+	padding-top: 2em;
+}
 #stars {
   content:" ";
   background: transparent;
@@ -79,7 +87,7 @@ body{
 
 /* Use this class to set a global background color for all elemnts. */
 .jw-skin-mkgo .jw-background-color {
-  background: #9a94eb;
+  background: white;
 }
 
 /* This is the class that houses all controls. Use this to adjust the appearance of the entire controlbar. */
@@ -93,74 +101,17 @@ body{
   vertical-align: middle;
 }
 
-/* Sets the style for the visual playlist. */
-
-.jw-skin-mkgo .jw-playlist {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Aligns the visual playlist above its icon. */
-
-.jw-skin-mkgo .jw-playlist-container {
-  left: -43%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Sets the style for the visual playlist items. */
-.jw-skin-mkgo .jw-playlist-container .jw-option {
-  border-bottom: 1px solid #444;
-}
-
-/* Allows you to adjust the color of the playlist item when hovering and has a different active style.*/
-
-.jw-skin-mkgo .jw-playlist-container .jw-option:hover,
-.jw-skin-mkgo .jw-playlist-container .jw-option.jw-active-option {
-  background-color: black;
-}
-
-/* Changes the color of the label when hovering.*/
-
-.jw-skin-mkgo .jw-playlist-container .jw-option:hover .jw-label {
-  color: #ff0046;
-}
-
-/* Aligns the playlist header icon with the items in the playlist. */
-.jw-skin-mkgo .jw-playlist-container .jw-icon-playlist {
-  margin-left: 0;
-}
-
-/* Sets the color of the play icon of the currently playing playlist item.*/
-.jw-skin-mkgo .jw-playlist-container .jw-label .jw-icon-play {
-  color: #ff0046;
-}
-
-/* Aligns the playlist play icon with the items in the playlist. */
-.jw-skin-mkgo .jw-playlist-container .jw-label .jw-icon-play:before {
-    padding-left: 0
-}
-
-/* Sets the color of the playlist title */
-.jw-skin-mkgo .jw-tooltip-title {
-    background-color: #000;
-    color: #fff
-}
-
-/* Style for playlist item, current time, qualities, and caption text.*/
-.jw-skin-mkgo .jw-text {
-  color: #ffffff;
-}
-
 /* Color for all buttons when they are inactive. This is over-ridden with the 
 inactive configuration in the skin block.*/
 .jw-skin-mkgo .jw-button-color {
-  color: #ffffff;
+  color: black;
 }
 
 /* Color for all buttons for when they are hovered on. This is over-ridden with the 
 active configuration in the skin block.*/
 
 .jw-skin-mkgo .jw-button-color:hover {
-  color: #ff0046;
+  color: red;
 }
 
 /* Color for when HD/CD icons are toggled on. */
@@ -177,6 +128,7 @@ active configuration in the skin block.*/
 .jw-skin-mkgo .jw-controlbar .jw-icon:before,
 .jw-skin-mkgo .jw-text-elapsed,
 .jw-skin-mkgo .jw-text-duration {
+	color: black;
     padding: 0 .7em;
 }
 
@@ -212,7 +164,7 @@ active configuration in the skin block.*/
 
 /* Color of the display icon */
 .jw-skin-mkgo .jw-icon-display {
-  color: #fff;
+  color: black;
 }
 
 /* Centers the display icon in it's container */
@@ -239,16 +191,16 @@ active configuration in the skin block.*/
 
 /* Sets the style for the elaspesd progress. */
 .jw-skin-mkgo .jw-progress {
-    background: #ff0046
+	color: black;
+    background: black;
 }
 
 /* Sets the width of the knob's container */
 .jw-skin-mkgo .jw-knob {
-    width: .6em;
-    height: .6em;
-    background-color: #fff;
+      padding-top: .05em;
+      height: 1.2em;
+     background-color: #fff;
     box-shadow: 0 0 0 1px #000;
-    border-radius: 1em
 }
 
 /* Sets the height for the horizontal slider container. */
@@ -260,7 +212,8 @@ active configuration in the skin block.*/
 .jw-skin-mkgo .jw-slider-horizontal .jw-rail,
 .jw-skin-mkgo .jw-slider-horizontal .jw-buffer,
 .jw-skin-mkgo .jw-slider-horizontal .jw-progress {
-    height: .2em;
+    height: .1em;
+    padding-top: 1em;
     border-radius: 0
 }
 
@@ -294,7 +247,7 @@ active configuration in the skin block.*/
 
 /* Sets the color of the duration text in the controlbar. */
 .jw-skin-mkgo .jw-text-duration {
-    color: #666f82
+    color: black;
 }
 
 /* Adds a left border as a spacer between all controlbar icons. */

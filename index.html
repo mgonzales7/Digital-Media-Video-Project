@@ -10,7 +10,7 @@
 	<div id='stars'></div>
 	<div id='stars2'></div>
 	<!--<div id='stars3'></div>-->
-	<div class="row">
+	<div class="row text">
 		<div class = "col-md-6 col-md-offset-3">
 			<h1>Journey by Music</h1>
 			<h4>Directed by Michael Gonzales, Original Music by Andy Lim</h4>
@@ -22,14 +22,35 @@
 			<div id="myElement"></div>
 		</div>
 	</div>
+	<div class="row share">
+		<div class = "col-md-2 col-md-offset-5">
+			<button type="button" class="btn btn-secondary" onclick="share()">Share</button>
+		</div>
+	</div>
 	<script type="text/JavaScript">
 	var playerInstance = jwplayer("myElement");
 	playerInstance.setup({
 	    file: "http://content.jwplatform.com/videos/21IqGyBC-ug4Jp07u.mp4",
 	    image: "http://content.jwplatform.com/thumbs/21IqGyBC-320.jpg",
+	    width: "100%",
+        aspectratio: "16:9",
+        logo: {
+		file: 'icon.png',
+		link: 'http://mkgo.co/'
+		},
 	    skin: {
 			    "name": "mkgo"
-			   }
+			  },
+		sharing: {
+				    "sites": ["reddit","facebook","twitter"]
+				 }
 	});
+	jwplayer().on('ready', function(event){
+		sharingPlugin = jwplayer().getPlugin('sharing');
+	});
+
+	function share(){
+		sharingPlugin.open()
+	}
 	</script>
 </body>
